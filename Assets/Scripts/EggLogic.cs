@@ -16,6 +16,8 @@ public class EggLogic : MonoBehaviour
             Debug.Log("GOAAAAAAl");
             gm.score += collision.GetComponent<Goals>().scoreToGive;
             Debug.Log($"Goal Points: {collision.GetComponent<Goals>().scoreToGive} Current Score: {gm.score}");
+            gm.GetComponent<PlaceEgg>().egging = false;
+            gm.GetComponent<PlaceEgg>().hasPlacedEgg = false;
             Destroy(gameObject);
         }
     }

@@ -12,8 +12,9 @@ public class PlaceEgg : MonoBehaviour
     TiltShake tiltShake;
 
     GameObject newEgg;
-    private Rigidbody2D eggRB;
-    bool egging;
+    Rigidbody2D eggRB;
+
+    public bool egging;
     public bool hasPlacedEgg;
     void Awake()
     {
