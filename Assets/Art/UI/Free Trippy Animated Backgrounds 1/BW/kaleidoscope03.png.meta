@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kaleidoscope03_0: -1885688745875575910
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

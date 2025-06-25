@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kaleicospio03-Sheet_0: -5374334288411545290
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

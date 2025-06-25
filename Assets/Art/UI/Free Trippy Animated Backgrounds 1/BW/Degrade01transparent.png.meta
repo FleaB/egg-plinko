@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Degrade01transparent_0: 878293597411706983
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      weird03-Sheet_0: 5840700130254643399
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

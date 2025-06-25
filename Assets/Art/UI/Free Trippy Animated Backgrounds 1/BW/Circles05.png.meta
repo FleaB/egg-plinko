@@ -547,7 +547,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Circles05_0: 1449430126503482941
+      Circles05_1: 3320979950395283107
+      Circles05_10: 4725442886806348592
+      Circles05_11: 4530154036379934488
+      Circles05_12: -4373665170928749620
+      Circles05_13: 4621984532926769095
+      Circles05_14: 6850404632939490181
+      Circles05_15: 1353011558339780445
+      Circles05_16: 4364461420349692606
+      Circles05_2: -3802140442285619848
+      Circles05_3: -5410787544326663072
+      Circles05_4: 5537193405878420924
+      Circles05_5: -3405807816741483549
+      Circles05_6: -1793127405478681597
+      Circles05_7: 275865900587507879
+      Circles05_8: 7077013549643629544
+      Circles05_9: -5314928545695192745
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
