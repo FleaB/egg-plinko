@@ -1,61 +1,58 @@
 fileFormatVersion: 2
-guid: c8e62b6dcae06be4fbb9638a04d6dd45
+guid: 996c96d5b154a2146a00c2e351d0eef1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3266374948526311454
-    second: UI_SF_01_0
+      213: 1449430126503482941
+    second: Circles05_0
   - first:
-      213: 6962169918840958838
-    second: UI_SF_01_1
+      213: 3320979950395283107
+    second: Circles05_1
   - first:
-      213: 8079783521542455383
-    second: UI_SF_01_2
+      213: -3802140442285619848
+    second: Circles05_2
   - first:
-      213: 7635194228599647629
-    second: UI_SF_01_3
+      213: -5410787544326663072
+    second: Circles05_3
   - first:
-      213: -4914040481277494626
-    second: UI_SF_01_4
+      213: 5537193405878420924
+    second: Circles05_4
   - first:
-      213: 663819246233419057
-    second: UI_SF_01_5
+      213: -3405807816741483549
+    second: Circles05_5
   - first:
-      213: -3951906321472520643
-    second: UI_SF_01_6
+      213: -1793127405478681597
+    second: Circles05_6
   - first:
-      213: -5523402520349809898
-    second: UI_SF_01_7
+      213: 275865900587507879
+    second: Circles05_7
   - first:
-      213: -4982952503517210027
-    second: UI_SF_01_8
+      213: 7077013549643629544
+    second: Circles05_8
   - first:
-      213: 4190639334722333496
-    second: UI_SF_01_9
+      213: -5314928545695192745
+    second: Circles05_9
   - first:
-      213: 5759763552042038519
-    second: UI_SF_01_10
+      213: 4725442886806348592
+    second: Circles05_10
   - first:
-      213: -5518059879514062953
-    second: UI_SF_01_11
+      213: 4530154036379934488
+    second: Circles05_11
   - first:
-      213: -9020856285045843987
-    second: UI_SF_01_12
+      213: -4373665170928749620
+    second: Circles05_12
   - first:
-      213: 8993351676579868873
-    second: UI_SF_01_13
+      213: 4621984532926769095
+    second: Circles05_13
   - first:
-      213: 6276100110935703650
-    second: UI_SF_01_14
+      213: 6850404632939490181
+    second: Circles05_14
   - first:
-      213: 3685660150968265598
-    second: UI_SF_01_15
+      213: 1353011558339780445
+    second: Circles05_15
   - first:
-      213: -4612671145499688227
-    second: UI_SF_01_16
-  - first:
-      213: 1411968452613954731
-    second: UI_SF_01_17
+      213: 4364461420349692606
+    second: Circles05_16
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -147,17 +144,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_SF_01_0
+      name: Circles05_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 231
-        width: 25
-        height: 25
+        x: 16
+        y: 179
+        width: 33
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +176,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e18452ea5be745d20800000000000000
-      internalID: 3266374948526311454
+      spriteID: d365df845096d1410800000000000000
+      internalID: 1449430126503482941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_SF_01_1
+      name: Circles05_1
       rect:
         serializedVersion: 2
-        x: 15
-        y: 198
-        width: 42
-        height: 43
+        x: 92
+        y: 216
+        width: 29
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,20 +198,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67fec6e67a89e9060800000000000000
-      internalID: 6962169918840958838
+      spriteID: 3a651896bad761e20800000000000000
+      internalID: 3320979950395283107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_SF_01_2
+      name: Circles05_2
       rect:
         serializedVersion: 2
-        x: 38
-        y: 224
-        width: 27
-        height: 21
+        x: 136
+        y: 216
+        width: 29
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,20 +220,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 750c797ed48212070800000000000000
-      internalID: 8079783521542455383
+      spriteID: 8754b6f89651c3bc0800000000000000
+      internalID: -3802140442285619848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_SF_01_3
+      name: Circles05_3
       rect:
         serializedVersion: 2
-        x: 64
-        y: 226
-        width: 113
-        height: 19
+        x: 208
+        y: 179
+        width: 33
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8d6bcaa2b8a5f960800000000000000
-      internalID: 7635194228599647629
+      spriteID: 0641d41656509e4b0800000000000000
+      internalID: -5410787544326663072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_SF_01_4
+      name: Circles05_4
       rect:
         serializedVersion: 2
-        x: 231
-        y: 231
-        width: 25
-        height: 25
+        x: 117
+        y: 187
+        width: 20
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,20 +264,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e9ab09dc732ddcbb0800000000000000
-      internalID: -4914040481277494626
+      spriteID: cb5c40ab01018dc40800000000000000
+      internalID: 5537193405878420924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_SF_01_5
+      name: Circles05_5
       rect:
         serializedVersion: 2
-        x: 11
-        y: 185
-        width: 44
-        height: 28
+        x: 4
+        y: 111
+        width: 20
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,20 +286,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13d7fce561c563900800000000000000
-      internalID: 663819246233419057
+      spriteID: 3eb00edd5d32cb0d0800000000000000
+      internalID: -3405807816741483549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_SF_01_6
+      name: Circles05_6
       rect:
         serializedVersion: 2
-        x: 79
-        y: 210
-        width: 48
-        height: 15
+        x: 48
+        y: 109
+        width: 49
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,107 +308,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3e720383220829c0800000000000000
-      internalID: -3951906321472520643
+      spriteID: 304ec6700288d17e0800000000000000
+      internalID: -1793127405478681597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_SF_01_7
+      name: Circles05_7
       rect:
         serializedVersion: 2
-        x: 130
-        y: 210
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6136d070caee853b0800000000000000
-      internalID: -5523402520349809898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_SF_01_8
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 210
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 55a963f491ff8dab0800000000000000
-      internalID: -4982952503517210027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_SF_01_9
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 210
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 83b67ef9544282a30800000000000000
-      internalID: 4190639334722333496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_SF_01_10
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 157
-        width: 57
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7f435bd1f6aceef40800000000000000
-      internalID: 5759763552042038519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_SF_01_11
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 163
-        width: 69
+        x: 117
+        y: 131
+        width: 20
         height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -408,20 +330,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79fba3886c9eb63b0800000000000000
-      internalID: -5518059879514062953
+      spriteID: 7a06922339214d300800000000000000
+      internalID: 275865900587507879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_SF_01_12
+      name: Circles05_8
       rect:
         serializedVersion: 2
-        x: 14
-        y: 49
-        width: 58
-        height: 102
+        x: 160
+        y: 109
+        width: 49
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -430,20 +352,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de71ef7d00b7fc280800000000000000
-      internalID: -9020856285045843987
+      spriteID: 8e38229e35a963260800000000000000
+      internalID: 7077013549643629544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_SF_01_13
+      name: Circles05_9
       rect:
         serializedVersion: 2
-        x: 95
-        y: 78
-        width: 116
-        height: 67
+        x: 233
+        y: 115
+        width: 20
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -452,42 +374,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c0f4b673bdcecc70800000000000000
-      internalID: 8993351676579868873
+      spriteID: 759214bb5a49d36b0800000000000000
+      internalID: -5314928545695192745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_SF_01_14
-      rect:
-        serializedVersion: 2
-        x: 95
-        y: 41
-        width: 116
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 260cc177ccf291750800000000000000
-      internalID: 6276100110935703650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_SF_01_15
+      name: Circles05_10
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 25
-        height: 25
+        y: 58
+        width: 8
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -496,20 +396,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7ba64d3168162330800000000000000
-      internalID: 3685660150968265598
+      spriteID: 0332d72e445249140800000000000000
+      internalID: 4725442886806348592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_SF_01_16
+      name: Circles05_11
       rect:
         serializedVersion: 2
-        x: 70
-        y: 7
-        width: 116
-        height: 26
+        x: 24
+        y: 17
+        width: 38
+        height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -518,20 +418,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd20cca38008cffb0800000000000000
-      internalID: -4612671145499688227
+      spriteID: 81f5a3428175ede30800000000000000
+      internalID: 4530154036379934488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_SF_01_17
+      name: Circles05_12
       rect:
         serializedVersion: 2
-        x: 231
+        x: 92
         y: 0
-        width: 25
-        height: 25
+        width: 73
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -540,8 +440,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bacdc14a3d1589310800000000000000
-      internalID: 1411968452613954731
+      spriteID: cc33b4023be9d43c0800000000000000
+      internalID: -4373665170928749620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles05_13
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 17
+        width: 38
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c72372c176942040800000000000000
+      internalID: 4621984532926769095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles05_14
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 58
+        width: 8
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58b6c0af7b6811f50800000000000000
+      internalID: 6850404632939490181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles05_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f17dff7dcd6c210800000000000000
+      internalID: 1353011558339780445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles05_16
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba17d3b98ea19c30800000000000000
+      internalID: 4364461420349692606
       vertices: []
       indices: 
       edges: []
