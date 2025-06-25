@@ -9,11 +9,15 @@ public class PlaceEgg : MonoBehaviour
     [SerializeField] float pathDuration;
     [SerializeField] float[] rotationPoints;
 
+    TiltShake tiltShake;
+
+    GameObject newEgg;
     private Rigidbody2D eggRB;
     bool egging;
-    public bool placedEgg;
+    public bool hasPlacedEgg;
     void Awake()
     {
+        tiltShake = GetComponent<TiltShake>();
         if (!egging)
         {
             Debug.Log("SpawnEgg");
@@ -30,7 +34,7 @@ public class PlaceEgg : MonoBehaviour
                 Debug.Log("NewEgg");
                 NewEgg();
             }
-            else if (!placedEgg)
+            else if (!hasPlacedEgg)
             {
                 Debug.Log("PlaceEgg");
                 EggPlace();
@@ -41,17 +45,18 @@ public class PlaceEgg : MonoBehaviour
     void NewEgg()
     {
         egging = true;
-        egg = Instantiate(egg, new Vector3(0, 3.16f), egg.transform.rotation);
-        egg.transform.DOPath(path, pathDuration, PathType.Linear, PathMode.Sidescroller2D);
-        egg.transform.DORotate(new Vector3(0, 0, 360), 1f, RotateMode.FastBeyond360).SetRelative(true).SetEase(Ease.Linear).SetLoops(-1);
-        eggRB = egg.GetComponent<Rigidbody2D>();
+        newEgg = Instantiate(egg, new Vector3(0, 3.16f), egg.transform.rotation);
+        newEgg.transform.DOPath(path, pathDuration, PathType.Linear, PathMode.Sidescroller2D);
+        newEgg.transform.DORotate(new Vector3(0, 0, 360), 1f, RotateMode.FastBeyond360).SetRelative(true).SetEase(Ease.Linear).SetLoops(-1);
+        eggRB = newEgg.GetComponent<Rigidbody2D>();
         eggRB.freezeRotation = true;
+        tiltShake.theEgg = newEgg;
     }
     void EggPlace()
     {
-        placedEgg = true;
+        hasPlacedEgg = true;
         eggRB.freezeRotation = false;
-        egg.transform.DOKill();
+        newEgg.transform.DOKill();
         eggRB.linearVelocity = Vector2.zero;
     }
 }

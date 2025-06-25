@@ -5,7 +5,7 @@ public class EggLogic : MonoBehaviour
     GameManager gm;
     private void Awake()
     {
-        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+        gm = GameObject.Find("Manager").GetComponent<GameManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
