@@ -56,16 +56,18 @@ public class PlaceEgg : MonoBehaviour
     {
         egging = true;
         newEgg = Instantiate(egg, new Vector3(0, 3.16f), egg.transform.rotation);
-        newEgg.transform.DOPath(path, pathDuration, PathType.Linear, PathMode.Sidescroller2D);
+        newEgg.transform.DOPath(path, pathDuration, PathType.Linear, PathMode.Sidescroller2D).SetEase(Ease.Linear).SetLoops(-1);
         newEgg.transform.DORotate(new Vector3(0, 0, 360), 1f, RotateMode.FastBeyond360).SetRelative(true).SetEase(Ease.Linear).SetLoops(-1);
         eggRB = newEgg.GetComponent<Rigidbody2D>();
         eggRB.freezeRotation = true;
+        eggRB.gravityScale = 0;
         tiltShake.theEgg = newEgg;
     }
     void EggPlace()
     {
         hasPlacedEgg = true;
         eggRB.freezeRotation = false;
+        eggRB.gravityScale = 0.5f;
         newEgg.transform.DOKill();
         eggRB.linearVelocity = Vector2.zero;
     }
