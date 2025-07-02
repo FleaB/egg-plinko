@@ -26,7 +26,7 @@ public class EggLogic : MonoBehaviour
         if (durability <= 0)
         {
             Debug.Log("Egg has broken!");
-            Destroy(gameObject);
+            DestroyEgg();
         }
     }
 
@@ -37,9 +37,7 @@ public class EggLogic : MonoBehaviour
             Debug.Log("GOAAAAAAl");
             gm.score += collision.GetComponent<Goals>().scoreToGive;
             Debug.Log($"Goal Points: {collision.GetComponent<Goals>().scoreToGive} Current Score: {gm.score}");
-            gm.GetComponent<PlaceEgg>().egging = false;
-            gm.GetComponent<PlaceEgg>().hasPlacedEgg = false;
-            Destroy(gameObject);
+            DestroyEgg();
         }
     }
 
@@ -61,8 +59,15 @@ public class EggLogic : MonoBehaviour
         {
             durability -= (float)2.0;
             Debug.Log($"Took 2.0 damage, Durability at {durability} out of 10");
-
         }
+    }
+
+    public void DestroyEgg()
+    {
+        gm.GetComponent<PlaceEgg>().egging = false;
+        gm.GetComponent<PlaceEgg>().hasPlacedEgg = false;
+        Destroy(gameObject);
+        
     }
 
     public void Immunity(float immuneTime)
