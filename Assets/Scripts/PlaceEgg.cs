@@ -8,16 +8,20 @@ public class PlaceEgg : MonoBehaviour
     [SerializeField] Vector3[] path;
     [SerializeField] float pathDuration;
     [SerializeField] float[] rotationPoints;
+    [SerializeField] int powerupChance;
 
     TiltShake tiltShake;
+    GameManager gm;
 
-    GameObject newEgg;
     Rigidbody2D eggRB;
+
+    [HideInInspector] public GameObject newEgg;
 
     public bool egging;
     public bool hasPlacedEgg;
     void Awake()
     {
+        gm = GetComponent<GameManager>();
         tiltShake = GetComponent<TiltShake>();
         if (!egging)
         {
@@ -30,10 +34,15 @@ public class PlaceEgg : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (!egging)
+            if (!egging && gm.eggAmount > 0)
             {
                 Debug.Log("NewEgg");
                 NewEgg();
+                if (Random.Range(0, powerupChance+1) == powerupChance)
+                {
+                    gm.SpawnPowerup();
+                }
+                gm.eggAmount--;
             }
             else if (!hasPlacedEgg)
             {

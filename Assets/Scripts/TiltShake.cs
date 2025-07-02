@@ -4,7 +4,7 @@ using DG.Tweening;
 public class TiltShake : MonoBehaviour
 {
     [SerializeField] Transform plinkoMachine;
-    public GameObject theEgg;
+    [HideInInspector] public GameObject theEgg;
 
     PlaceEgg eggPlacer;
     bool shaking;

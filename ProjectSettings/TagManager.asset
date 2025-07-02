@@ -7,6 +7,7 @@ TagManager:
   - Egg
   - Goal
   - Log
+  - Powerup
   layers:
   - Default
   - TransparentFX

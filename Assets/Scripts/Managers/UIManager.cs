@@ -17,6 +17,6 @@ public class UIManager : MonoBehaviour
     
     void Update()
     {
-        scoreText.text = $"SCORE: {gm.score}";
+        scoreText.text = $"SCORE: {gm.finalScore}";
     }
 }
