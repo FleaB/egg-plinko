@@ -1,16 +1,37 @@
+using System;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class EggLogic : MonoBehaviour
 {
     GameManager gm;
+    private float speed;
+    private float durability;
+    public Rigidbody2D rb;
+
     private void Awake()
     {
         gm = GameObject.Find("Manager").GetComponent<GameManager>();
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Start()
+    {
+        durability = 10f;
+    }
+
+    private void Update()
+    {
+        speed = Vector3.Magnitude(rb.linearVelocity);
+        if (durability <= 0)
+        {
+            Debug.Log("Egg has broken!");
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Collision");
         if (collision.CompareTag("Goal"))
         {
             Debug.Log("GOAAAAAAl");
@@ -20,5 +41,37 @@ public class EggLogic : MonoBehaviour
             gm.GetComponent<PlaceEgg>().hasPlacedEgg = false;
             Destroy(gameObject);
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Collision at speed: " + speed);
+        if (speed < 3)
+        {
+            durability -= (float)0.5;
+            Debug.Log($"Took 0.5 damage, Durability at {durability} out of 10");
+        }
+        else if (speed < 4)
+        {
+            durability -= (float)1.0;
+            Debug.Log($"Took 1.0 damage, Durability at {durability} out of 10");
+
+        }
+        else
+        {
+            durability -= (float)2.0;
+            Debug.Log($"Took 2.0 damage, Durability at {durability} out of 10");
+
+        }
+    }
+
+    public void Immunity(float immuneTime)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Repair(float repairAmnt)
+    {
+        throw new NotImplementedException();
     }
 }
