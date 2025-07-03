@@ -168,6 +168,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
+  eggNoise: {fileID: 0}
+  hit: {fileID: 8300000, guid: fbc97894c19082e42a82ac6ea8eb9e0f, type: 3}
+  goal: {fileID: 0}
 --- !u!82 &6619761732577493543
 AudioSource:
   m_ObjectHideFlags: 0
@@ -178,7 +181,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c5aea4cc8f90f5943ab8a084b2f57854, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: c5aea4cc8f90f5943ab8a084b2f57854, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
