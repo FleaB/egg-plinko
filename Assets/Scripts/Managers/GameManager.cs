@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public int score;
     public int finalScore;
     public int eggAmount = 1;
     public float scoreModifier = 1;
@@ -14,7 +13,7 @@ public class GameManager : MonoBehaviour
         int randomSpawn = Random.Range(0, powerupSpawns.Length);
         Instantiate(powerups[Random.Range(0, powerups.Length)], powerupSpawns[randomSpawn].position, powerupSpawns[randomSpawn].rotation);
     }
-    public void Score()
+    public void Score(int score)
     {
         float calcScore = score * scoreModifier;
 
@@ -25,8 +24,8 @@ public class GameManager : MonoBehaviour
 
     public void DestroyEgg()
     {
+        Destroy(GetComponent<PlaceEgg>().newEgg);
         GetComponent<PlaceEgg>().egging = false;
         GetComponent<PlaceEgg>().hasPlacedEgg = false;
-        Destroy(GetComponent<PlaceEgg>().newEgg);
     }
 }

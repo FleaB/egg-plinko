@@ -44,13 +44,12 @@ public class EggLogic : MonoBehaviour
         {
             eggNoise.PlayOneShot(goal, 0.7F);
             Debug.Log("GOAAAAAAl");
-            gm.score += collision.GetComponent<Goals>().scoreToGive;
+            gm.Score(collision.GetComponent<Goals>().scoreToGive);
             if (collision.GetComponent<Goals>().scoreToGive >= 500)
             {
                 eggNoise.PlayOneShot(cheer, 0.7F);
-
             }
-            Debug.Log($"Goal Points: {collision.GetComponent<Goals>().scoreToGive} Current Score: {gm.score}");
+            Debug.Log($"Goal Points: {collision.GetComponent<Goals>().scoreToGive} Current Score: {gm.finalScore}");
             gm.DestroyEgg();
         }
         if (collision.CompareTag("Powerup"))
