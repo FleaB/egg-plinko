@@ -51,5 +51,9 @@ public class TiltShake : MonoBehaviour
                 plinkoMachine.DORotate(Vector3.zero, 1);
             }
         }
+        if (!eggPlacer.egging)
+        {
+            plinkoMachine.DORotate(Vector3.zero, 0.5f);
+        }
     }
 }
