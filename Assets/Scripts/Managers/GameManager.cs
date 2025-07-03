@@ -28,6 +28,5 @@ public class GameManager : MonoBehaviour
         GetComponent<PlaceEgg>().egging = false;
         GetComponent<PlaceEgg>().hasPlacedEgg = false;
         Destroy(GetComponent<PlaceEgg>().newEgg);
-
     }
 }
