@@ -8,20 +8,16 @@ public class TiltShake : MonoBehaviour
 
     PlaceEgg eggPlacer;
     bool shaking;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         eggPlacer = GetComponent<PlaceEgg>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.Space))
         {
             if (eggPlacer.hasPlacedEgg)
             {
-                Debug.Log("SHAKING");
                 plinkoMachine.DOShakeRotation(1, 1, 20, 20, true);
                 shaking = true;
             }
@@ -35,22 +31,25 @@ public class TiltShake : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (eggPlacer.hasPlacedEgg)
         {
-            plinkoMachine.DORotate(new Vector3(0, 0, 10), 1);
-        }
-        else if (Input.GetKeyDown(KeyCode.E))
-        {
-            plinkoMachine.DORotate(new Vector3(0, 0, -10), 1);
-        }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                plinkoMachine.DORotate(new Vector3(0, 0, 10), 1);
+            }
+            else if (Input.GetKeyDown(KeyCode.E))
+            {
+                plinkoMachine.DORotate(new Vector3(0, 0, -10), 1);
+            }
 
-        if (Input.GetKeyUp(KeyCode.Q))
-        {
-            plinkoMachine.DORotate(Vector3.zero, 1);
-        }
-        if (Input.GetKeyUp(KeyCode.E))
-        {
-            plinkoMachine.DORotate(Vector3.zero, 1);
+            if (Input.GetKeyUp(KeyCode.Q))
+            {
+                plinkoMachine.DORotate(Vector3.zero, 1);
+            }
+            if (Input.GetKeyUp(KeyCode.E))
+            {
+                plinkoMachine.DORotate(Vector3.zero, 1);
+            }
         }
     }
 }
