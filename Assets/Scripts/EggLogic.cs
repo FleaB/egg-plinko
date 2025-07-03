@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Rendering;
 
 public class EggLogic : MonoBehaviour
@@ -8,11 +9,18 @@ public class EggLogic : MonoBehaviour
     private float speed;
     private float durability;
     public Rigidbody2D rb;
+    public AudioSource eggNoise;
+
+    [Header("Egg Audio")]
+    public AudioClip hit;
+    public AudioClip goal;
+    public AudioClip cheer;
 
     private void Awake()
     {
         gm = GameObject.Find("Manager").GetComponent<GameManager>();
         rb = GetComponent<Rigidbody2D>();
+        eggNoise = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -34,8 +42,14 @@ public class EggLogic : MonoBehaviour
     {
         if (collision.CompareTag("Goal"))
         {
+            eggNoise.PlayOneShot(goal, 0.7F);
             Debug.Log("GOAAAAAAl");
             gm.score += collision.GetComponent<Goals>().scoreToGive;
+            if (collision.GetComponent<Goals>().scoreToGive >= 500)
+            {
+                eggNoise.PlayOneShot(cheer, 0.7F);
+
+            }
             Debug.Log($"Goal Points: {collision.GetComponent<Goals>().scoreToGive} Current Score: {gm.score}");
             gm.DestroyEgg();
         }
@@ -64,6 +78,7 @@ public class EggLogic : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        eggNoise.PlayOneShot(hit, 0.7F);
         Debug.Log("Collision at speed: " + speed);
         if (speed < 3)
         {
