@@ -1863,12 +1863,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 426002198}
     - target: {fileID: 6894634155177684603, guid: d9e6f4f3516b3a345814031c531ff854, type: 3}
+      propertyPath: pathDuration
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894634155177684603, guid: d9e6f4f3516b3a345814031c531ff854, type: 3}
       propertyPath: plinkoMachine
       value: 
       objectReference: {fileID: 426002198}
     - target: {fileID: 6894634155177684603, guid: d9e6f4f3516b3a345814031c531ff854, type: 3}
       propertyPath: powerupChance
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894634155177684603, guid: d9e6f4f3516b3a345814031c531ff854, type: 3}
+      propertyPath: path.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894634155177684603, guid: d9e6f4f3516b3a345814031c531ff854, type: 3}
+      propertyPath: path.Array.data[2].x
+      value: 5.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894634155177684603, guid: d9e6f4f3516b3a345814031c531ff854, type: 3}
+      propertyPath: path.Array.data[2].y
+      value: 3.16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
