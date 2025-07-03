@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     public void SpawnPowerup()
     {
-        int randomSpawn = Random.Range(0, powerupSpawns.Length + 1);
+        int randomSpawn = Random.Range(0, powerupSpawns.Length);
         Instantiate(powerups[Random.Range(0, powerups.Length)], powerupSpawns[randomSpawn].position, powerupSpawns[randomSpawn].rotation);
     }
     public void Score()

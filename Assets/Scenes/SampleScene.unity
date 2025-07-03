@@ -3031,6 +3031,8 @@ MonoBehaviour:
   rotationPoints:
   - 30
   - -30
+  powerupChance: 0
+  newEgg: {fileID: 0}
   egging: 0
   hasPlacedEgg: 0
 --- !u!4 &1677154932
@@ -3061,6 +3063,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  finalScore: 0
+  eggAmount: 1
+  scoreModifier: 1
+  powerupSpawns: []
+  powerups: []
 --- !u!114 &1677154934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3100,13 +3107,13 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 98fd0b40ebb2a8c4fa4a1d6dab397916, type: 3}
   m_Resource: {fileID: 8300000, guid: 98fd0b40ebb2a8c4fa4a1d6dab397916, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 85
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -3648,6 +3655,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 6619761732577493543, guid: 1326229d397ccd944a418646e11ce7ea, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619761732577493543, guid: 1326229d397ccd944a418646e11ce7ea, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052961800099666615, guid: 1326229d397ccd944a418646e11ce7ea, type: 3}
+      propertyPath: goal
+      value: 
+      objectReference: {fileID: 8300000, guid: cf30df3193be10f42bb1f62c9407d334, type: 3}
+    - target: {fileID: 8052961800099666615, guid: 1326229d397ccd944a418646e11ce7ea, type: 3}
+      propertyPath: cheer
+      value: 
+      objectReference: {fileID: 8300000, guid: 00800612fc3cd484eac7b85e0144ca57, type: 3}
     - target: {fileID: 8590126302392203721, guid: 1326229d397ccd944a418646e11ce7ea, type: 3}
       propertyPath: m_Name
       value: EGG
